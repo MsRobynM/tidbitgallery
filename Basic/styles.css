@@ -1,0 +1,16 @@
+body {
+    background-color: #444;
+    color: #ccc;
+    margin: 0;
+}
+
+header {
+    height: 50vh;
+    background-color: blue;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    background-color: red;
+}

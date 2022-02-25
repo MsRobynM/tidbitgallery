@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="smooth_styles.css" type="text/css" media="screen" >
+    <title>Scratch Document</title>
+    <script src="https://kit.fontawesome.com/d6ff1d8932.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <a href="../index.html"> 
+        <i class="fas fa-home fa-2x gohomeico"></i>  </a>
+    <a href="#top">
+        <i class="fas fa-angle-double-up fa-2x gotopico"></i></a>
+      
+
+    <header>
+        <div id="top">
+            <h1>Hero Header Here</h1>
+        </div>
+        <div id="topmenu">
+            <a href="#scroll_dest1">Go Section 1</a>
+            <a href="#scroll_dest2">Go Section 2</a>
+            <a href="#scroll_dest3">Go Section 3</a>
+            <a href="#scroll_dest4">Go Section 4</a>
+            <a href="#scroll_dest5">Go Section 5</a>
+        </div>
+        
+
+    </header>
+    <div id="ztop2" class="content">
+       <h1>this is content</h1>
+       <div id="scroll_dest1" class="card"> <h2>Section 1</h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repellendus dolorem aperiam, facilis nisi quas iste inventore quod voluptatibus optio. </div>
+       <div class="showpic" >
+           <img src="abstractguitarplayer.png" alt="gtr-plyr" width="300px">
+       </div>
+       <div id="scroll_dest2" class="card"> <h2>Section 2</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et consequatur quis dolor commodi exercitationem, praesentium at sed perspiciatis temporibus nesciunt, ut. Facilis nam, assumenda ipsam adipisci deserunt, amet voluptatum dicta.</div>
+       <div class="showpic" >
+           <img src="abstractguitarplayer.png" alt="gtr-plyr" width="300px">
+       </div>
+       <div id="scroll_dest3" class="card"> <h2>Section 3</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, sunt nam nihil atque ex, esse omnis, dolores rem laudantium vel voluptatum eum tenetur adipisci optio doloribus maxime minima beatae debitis!</div>
+       <div class="showpic" >
+           <img src="abstractguitarplayer.png" alt="gtr-plyr" width="300px">
+       </div>
+       <div id="scroll_dest4" class="card"> <h2>Section 4</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sint, perspiciatis culpa necessitatibus iste aspernatur tempora voluptate, deserunt, reiciendis est facere dicta assumenda eligendi consequatur. Consequatur quas quis, illum assumenda.</div>
+       <div class="showpic" >
+           <img src="abstractguitarplayer.png" alt="gtr-plyr" width="300px">
+       </div>
+       <div id="scroll_dest5" class="card"> <h2>Section 5</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea maiores quisquam quaerat ab totam consectetur repudiandae dolor quibusdam rem alias quas corporis accusantium rerum, animi incidunt quis! Amet, quidem.</div>
+       <div class="showpic" >
+            <img src="abstractguitarplayer.png" alt="gtr-plyr" width="300px">
+        </div>
+    </div>
+    
+    <footer>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illum atque ullam praesentium fugit, excepturi ducimus rerum eius doloremque! Blanditiis eius sint eaque quae tenetur vero nesciunt veritatis ut modi natus! Delectus mollitia, obcaecati impedit a velit fuga molestiae. Esse ab, quam incidunt illum accusantium soluta sed, ea fuga optio ipsam et repudiandae modi illo. Reiciendis molestias, culpa fugit maxime vero aperiam quisquam. Velit voluptates rerum ex minima, corporis voluptas, illo reprehenderit eos deserunt rem sunt mollitia molestiae illum sint a voluptatum maiores laborum doloribus quo. Totam aliquam fugiat quia, incidunt eligendi dicta vero illo quos earum nesciunt nihil excepturi.
+    </footer>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(function() {
+    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    });
+});
+</script>
+
+
+</html>

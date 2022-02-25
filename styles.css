@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+:root {
+/*  --background: rgba(60, 60, 192, .85); //rgba(0, 214, 170, .85); */
+  --background: #5959c9;
+  --selectcolor: rgba(210, 210, 255, 0.85);
+  --txtcolor: #bbb;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+    background: var(--background);
+    color: var(--txtcolor);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+    /*display: block;
+    width:340px;
+    margin-left: auto; margin-right: auto;*/
+}
+a {
+    color: var(--txtcolor);
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+
+.tidbitmenu {
+    width:340px;
+    margin-left: auto; margin-right: auto;
+    background: #555;
+} 
+
+.tiditem {
+    padding: 18px 0 18px 15px;
+    /*border-bottom: 1px solid #ccc;*/
+    border-bottom: 10px solid var(--background);
+}
+
+.tiditem:last-child {
+    color:red;
+    border-bottom: none;
+}
+
+.tiditem:hover {
+    background-color: #444;
+}
+
+.tiditem a:hover{
+    color: var(--selectcolor);
+    font-size: 1.3em;
+    
+}

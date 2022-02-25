@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+:root {
+/*  --background: rgba(60, 60, 192, .85); //rgba(0, 214, 170, .85); */
+  --background1: #45459b;
+  --background2: #5959c9;
+  --backgroundmenu: #222250;
+  --selectcolor: rgba(210, 210, 255, 0.85);
+  --txtcolor: #bbb;
+}
+
+
+
+html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+ /*   background-color: #228;
+    color: #ccc;*/
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+    background: var(--background2);
+    color: var(--txtcolor);
+}
+
+.gohomeico {
+    color: rgba(153, 153, 207, 0.95);
+    /*font-size: 1.5em;*/
+    position: fixed;
+    top: 20px;
+    right: 15px;
+}
+
+.gotopico {
+    color: rgba(153, 153, 207, 0.95);
+    /*font-size: 1.5em;*/
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding:4px;
+    /*border-bottom: 1px solid white;*/
+    
+}
+header a:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+header a:link,
+header a:visited {   
+    color: white; 
+}
+header a:hover,
+header a:active {
+    display: block;
+    color: orangered;
+    text-decoration: none;
+}
+
+
+
+header { margin-top: 0;
+    height: 60vh;
+    background-color: var(--background1);     
+    color: #ddd;
+}
+
+#top h1 {
+    text-align: center;
+    padding: 22px 0;
+    font-size: 4rem;
+}
+
+#topmenu {
+    display: block;
+    width:150px; 
+    background-color: var(--backgroundmenu); 
+    margin:5px auto 10px auto;
+    text-align: center;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;;
+    padding-bottom: 20px;
+    background-color: #bbb;
+}
+
+.content h1 {
+    color:#444;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.card {
+    display: block;
+    width: 80%;
+    padding: 25px;
+    margin: 20px auto 40px auto;
+    background-color:#777; 
+}
+
+.showpic {
+    text-align: center;
+}
+
+footer {
+    margin: 100px;
+    font-size: 2.1em;
+}

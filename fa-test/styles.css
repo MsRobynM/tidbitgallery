@@ -1,0 +1,63 @@
+html, body {
+    margin: 0; padding: 0;
+}
+
+.gohome {
+    float: left;
+    color:rgba(10,110,10,.5);
+}
+
+
+
+.gopagetop {
+    color: rgba(80, 80, 80, .95);
+    /*font-size: 1.5em;*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.content {
+    padding: 20px 10px 0 10px;
+    min-height: 600px;
+    background: orangered;
+    color: azure;
+    line-height: 1.4;
+    font-size: 1.3rem;
+}
+/*
+.wrapgohome {
+    width: 80px; 
+    /*min-height: 80px; */
+    margin: 20px 10px 0 10px;
+    border: 1px solid white;
+    float: left;
+}
+
+
+
+.content p { float: left;
+    width: 80%;
+    color: white;
+ 
+    padding: 0 20px;
+}
+*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+.go-home-icon {color: blue;}
+.page-top-icon {
+    color: rgba(80, 80, 80, .85);
+}
+*/
+.brandx {
+    border: 1px solid green;
+    margin: 20px; padding: 20px;
+}
+
+img {border: 1px solid green; padding: 20px; }
